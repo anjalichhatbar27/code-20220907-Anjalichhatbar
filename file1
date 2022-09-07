@@ -1,3 +1,22 @@
-# asking for input from the users  
-the_height = float(input("Enter the height in cm: "))  
-the_weight = float(input("Enter the weight in kg: "))  
+height = float(input("What's your height(m) ? : "))
+weight = float(input("What's your weight(kg) ? : "))
+	
+
+	bmi = weight/(height**2)
+	
+
+	print("Your Body Mass Index is: {0} and you are ".format(bmi),end='')
+	
+
+	if(bmi <= 18.4):
+	    print("Malnutrition risk :(")
+	elif(bmi >= 18.5 and bmi <= 24.9):
+	    print("Low Risk")
+	elif(bmi >=25 and bmi <= 29.9):
+	    print("Enhanced Risk")
+	elif(bmi >=30 and bmi <= 34.9):
+	    print("Medium Risk")
+  elif(bmi >=35 and bmi <= 39.9):
+	    print("High Risk")
+	elif(bmi >=40):
+	    print("Very High Risk :(")
